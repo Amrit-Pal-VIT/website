@@ -1,9 +1,338 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Amrit Pal | Academic Profile</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0f172a;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background: #1d4ed8;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(15,23,42,0.92), rgba(29,78,216,0.8));
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: auto;
+      font-size: 1.05rem;
+      color: #e5e7eb;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #6b7280;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: white;
+      padding: 24px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      color: #1d4ed8;
+      margin-bottom: 12px;
+    }
+
+    .card ul {
+      padding-left: 18px;
+    }
+
+    .card ul li {
+      margin-bottom: 8px;
+    }
+
+    .alt {
+      background: #eaf1ff;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 22px 0;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        justify-content: center;
+      }
+
+      .logo {
+        width: 100%;
+        text-align: center;
+      }
+
+      .menu {
+        justify-content: center;
+      }
+
+      .hero h1 {
+        font-size: 2.1rem;
+      }
+    }
+  </style>
+</head>
 <body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Dr. Amrit Pal</div>
+        <ul class="menu">
+          <li><a href="#qualification">Qualification</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#students">Students</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#services">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+  <section class="hero">
+    <div class="container">
+      <h1>Dr. Amrit Pal</h1>
+      <p>
+        Welcome to my academic profile. This website highlights my qualification, teaching contributions,
+        student mentoring, research interests, and professional services.
+      </p>
+    </div>
+  </section>
 
+  <section id="qualification">
+    <div class="container">
+      <div class="section-title">
+        <h2>Qualification</h2>
+        <p>Academic background and professional preparation.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Degrees</h3>
+          <ul>
+            <li>Ph.D. in Computer Science / Related Area</li>
+            <li>M.Tech / M.E. in Relevant Specialization</li>
+            <li>B.Tech / B.E. in Relevant Discipline</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Expertise</h3>
+          <ul>
+            <li>Machine Learning</li>
+            <li>Deep Learning</li>
+            <li>Federated Learning and Edge Computing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching" class="alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Teaching</h2>
+        <p>Courses, pedagogy, and academic engagement.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Courses Handled</h3>
+          <ul>
+            <li>Database Management Systems</li>
+            <li>Computer Networks</li>
+            <li>Artificial Intelligence</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Teaching Activities</h3>
+          <ul>
+            <li>Lecture delivery and course design</li>
+            <li>Lab mentoring and practical sessions</li>
+            <li>Assessment and evaluation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="students">
+    <div class="container">
+      <div class="section-title">
+        <h2>Students</h2>
+        <p>Student support, mentoring, and supervision.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Mentoring</h3>
+          <ul>
+            <li>Undergraduate and postgraduate guidance</li>
+            <li>Project supervision</li>
+            <li>Research mentoring</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Student Development</h3>
+          <ul>
+            <li>Innovation and technical activities</li>
+            <li>Publication support</li>
+            <li>Career guidance</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="alt">
+    <div class="container">
+      <div class="section-title">
+        <h2>Research</h2>
+        <p>Research interests and scholarly contributions.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Research Areas</h3>
+          <ul>
+            <li>Machine Learning and Deep Learning</li>
+            <li>Federated Learning</li>
+            <li>Edge Computing and Intelligent Systems</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Academic Contributions</h3>
+          <ul>
+            <li>Journal publications</li>
+            <li>Conference papers</li>
+            <li>Collaborative research projects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Services</h2>
+        <p>Institutional and professional service contributions.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <h3>Institutional Services</h3>
+          <ul>
+            <li>Committee roles</li>
+            <li>Academic administration</li>
+            <li>Event coordination</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Professional Services</h3>
+          <ul>
+            <li>Reviewer and editorial roles</li>
+            <li>Conference support</li>
+            <li>Technical and academic outreach</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Dr. Amrit Pal. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
