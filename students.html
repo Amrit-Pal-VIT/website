@@ -4,121 +4,128 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Students | Dr. Amrit Pal</title>
+
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *{margin:0;padding:0;box-sizing:border-box}
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f7fb;
+      color:#1f2937;
     }
 
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f4f7fb;
-      color: #1f2937;
-      line-height: 1;
+    header{
+      background:#0f172a;
+      color:white;
+      padding:15px 0;
     }
 
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 18px 0;
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:auto;
     }
 
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
     }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 12px;
+    .logo{
+      font-size:1.5rem;
+      font-weight:bold;
     }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
+    .menu{
+      list-style:none;
+      display:flex;
+      gap:15px;
+      flex-wrap:wrap;
     }
 
-    .menu {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
+    .menu a{
+      color:white;
+      text-decoration:none;
+      padding:6px 10px;
+      border-radius:6px;
     }
 
-    .menu a {
-      color: white;
-      text-decoration: none;
-      padding: 6px 10px;
-      border-radius: 6px;
+    .menu a:hover,.active{
+      background:#1d4ed8;
     }
 
-    .menu a:hover,
-    .menu a.active {
-      background: #1d4ed8;
+    .hero{
+      background:linear-gradient(135deg,#0f172a,#1d4ed8);
+      color:white;
+      text-align:center;
+      padding:60px 20px;
     }
 
-    .page-title {
-      background: linear-gradient(135deg, #0f172a, #1d4ed8);
-      color: white;
-      text-align: center;
-      padding: 70px 20px;
+    section{
+      padding:50px 0;
     }
 
-    .page-title h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+      color:#0f172a;
     }
 
-    section {
-      padding: 50px 0;
+    .student-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+      gap:15px;
+      margin-top:20px;
     }
 
-    h2 {
-      color: #0f172a;
-      margin-bottom: 20px;
-      text-align: center;
+    .student-card{
+      background:white;
+      padding:8px;
+      border-radius:8px;
+      text-align:center;
+      box-shadow:0 3px 8px rgba(0,0,0,0.06);
+      transition:0.2s;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+    .student-card:hover{
+      transform:translateY(-5px);
     }
 
-    .card {
-      background: white;
-      padding: 22px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    .student-card img{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      object-fit:cover;
+      margin-bottom:5px;
     }
 
-    .card h3 {
-      color: #1d4ed8;
-      margin-bottom: 10px;
+    .student-card h3{
+      margin:4px 0;
+      font-size:0.8rem;
+      line-height:1.2;
     }
 
-    .card ul {
-      padding-left: 18px;
+    .student-card a{
+      text-decoration:none;
+      color:#1d4ed8;
     }
 
-    .card li {
-      margin-bottom: 8px;
+    .student-card a:hover{
+      text-decoration:underline;
     }
 
-    footer {
-      background: #0f172a;
-      color: #cbd5e1;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+    footer{
+      background:#0f172a;
+      color:#cbd5e1;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -136,59 +143,83 @@
   </div>
 </header>
 
-<section class="page-title">
+<section class="hero">
   <h1>Students</h1>
-  <p>Student mentoring, project supervision, and research guidance</p>
+  <p>Student mentoring and research supervision</p>
 </section>
 
+<!-- Past Students -->
 <section>
   <div class="container">
-    <h2>Student Guidance</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Past Students</h3>
-        <ul>
-          <li>Tanmay Deshpande</li>
-          <li>Satwik</li>
-          <li>Bharat Krishna</li>
-        </ul>
+    <h2>Past Students</h2>
+    <div class="student-grid">
+
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Tanmay Deshpande</a></h3>
       </div>
 
-      <div class="card">
-        <h3>Masters Students</h3>
-        <ul>
-          <li>Sri Hariharan</li>
-          <li>Vaibhav Joshi</li>
-          <li>Jagriti Singh</li>
-          <li>Ankit</li>
-        </ul>
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Satwik</a></h3>
       </div>
 
-      <div class="card">
-        <h3>Ph.D. Students</h3>
-        <ul>
-          <li>Anant Kumar</li>
-        </ul>
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Bharat Krishna</a></h3>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- Masters Students -->
 <section>
   <div class="container">
-    <h2>Current Research Focus with Students</h2>
-    <div class="card">
-      <p>
-        Dr. Amrit Pal is actively working with students on the development of distributed AI models
-        that are adaptive to edge devices. The focus includes efficient machine learning models,
-        federated learning, deep learning, and intelligent systems for real-world applications.
-      </p>
+    <h2>Masters Students</h2>
+    <div class="student-grid">
+
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Sri Hariharan</a></h3>
+      </div>
+
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Vaibhav Joshi</a></h3>
+      </div>
+
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Jagriti Singh</a></h3>
+      </div>
+
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Ankit</a></h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PhD Students -->
+<section>
+  <div class="container">
+    <h2>Ph.D. Students</h2>
+    <div class="student-grid">
+
+      <div class="student-card">
+        <img src="https://via.placeholder.com/120">
+        <h3><a href="#">Anant Kumar</a></h3>
+      </div>
+
     </div>
   </div>
 </section>
 
 <footer>
-  <p>&copy; 2026 Dr. Amrit Pal. All rights reserved.</p>
+  <p>&copy; 2026 Dr. Amrit Pal</p>
 </footer>
 
 </body>
